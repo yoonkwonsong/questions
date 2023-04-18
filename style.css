@@ -62,8 +62,12 @@ main > .card > .top-container > .btn-container > .btn-minus {
     display: none;
 }
 
-main > .card > .top-container > .btn-container > .btn-minus.btn-show {
+main > .card.open-card > .top-container > .btn-container > .btn-minus {
     display: block;
+}
+
+main > .card.open-card > .top-container > .btn-container > .btn-plus {
+    display: none;
 }
 
 main > .card > .bottom-container {
@@ -74,7 +78,7 @@ main > .card > .bottom-container {
     display: none;
 }
 
-main > .card > .bottom-container.container-show {
+main > .card.open-card > .bottom-container {
     display: block;
 }
 
