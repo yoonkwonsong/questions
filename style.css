@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid rgb(255, 143, 143);
+    /* outline: 1px solid rgb(255, 143, 143); */
 }
 
 main {
@@ -14,13 +14,14 @@ main {
 }
 
 main > h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-style: italic;
-    margin: 100px 0 40px;
+    margin: 150px 0 40px;
+    color: rgb(70, 70, 70);
 }
 
 main > .card {
-    width: 700px;
+    width: 600px;
     background-color: white;
     margin: 20px;
     border-radius: 10px;
@@ -29,9 +30,56 @@ main > .card {
 main > .card > .top-container {
     display: flex;
     justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 30px;
+}
+
+main > .card > .top-container > h1 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
 }
 
 main > .card > .top-container > .btn-container {
     display: flex;
     align-items: center;
+}
+
+main > .card > .top-container > .btn-container > .btn {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(201, 178, 50);
+    transition: all 0.3s ease-in-out;
+}
+
+main > .card > .top-container > .btn-container > .btn:hover {
+    transform: rotate(60deg);
+}
+
+main > .card > .top-container > .btn-container > .btn-minus {
+    display: none;
+}
+
+main > .card > .top-container > .btn-container > .btn-minus.btn-show {
+    display: block;
+}
+
+main > .card > .bottom-container {
+    border-top: 1px solid rgb(206, 182, 45);
+    margin: 0 30px;
+    padding: 20px 30px 30px 0;
+
+    display: none;
+}
+
+main > .card > .bottom-container.container-show {
+    display: block;
+}
+
+main > .card > .bottom-container > p {
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
 }
