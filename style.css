@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid rgb(255, 143, 143);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(253, 245, 235);
+}
+
+main > h1 {
+    font-size: 50px;
+    font-style: italic;
+    margin: 100px 0 40px;
+}
+
+main > .card {
+    width: 700px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+main > .card > .top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main > .card > .top-container > .btn-container {
+    display: flex;
+    align-items: center;
+}
